@@ -1,0 +1,63 @@
+<!-- 
+ITEW2 - MIDTERM PROJECT
+
+GROUP MEMBERS:
+  Alejandre, Christian John Erik P.
+  Allab, Kenneth Grant R.
+  Amular, John Loui C.
+  Banaag, Cristhian Paulo S.
+  Barnedo, Darrel T.
+  Centeno, John Andrei C.
+  Fontanilla, Vince Carlo T.
+  Lagmay, Raven Glenn P.
+  Mamplata, Kyle Deejay C.
+  Ramos, Ryan Tristan A.
+
+-->
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ITEW2 - Midterm Project</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="BingoCard.js"></script>
+        <script src="BallDraw.js"></script>
+    </head>
+    <body>
+        <div class="background-container">
+            <div class="container">
+                <!-- Start Box -->
+                <div class="start-container">
+                    <!-- Input amount of bingo cards Box -->
+                    <p id="pCardAmount">How many bingo cards?</p>
+                    <input id="inputCards" type="number" min="1" placeholder="Enter Digit/s"/>
+                    <button id="btnGenerateCards">GENERATE CARDS</button>
+                </div>
+                <!-- Card Container -->
+                <div class="table-container hidden"></div>
+                
+                <!-- Container for Button in Ongoing Game -->
+                <div class="btn-container hidden">
+                    <div class="drawnball-container">
+                        <p class="pDrawnBall">0</p>
+                    </div>
+                    <button id="btnDrawBall" disabled>DRAW BALL</button>
+                    <button id="btnClear">CLEAR</button>
+                </div>
+    
+                <!-- Container for displaying the tables that got a winning line-->
+                <div class="winning-table-container hidden">
+                    <p id="pCongrats">CONGRATULATIONS YOU GOT BINGO!</p>
+                    <div class="winning-card-container"></div>
+                    <button id="btnPlayAgain">PLAY AGAIN?</button>
+                </div>
+            </div>
+            <div class="footer">
+                <p>ITEW2 Midterm Project &copy;2023</p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
